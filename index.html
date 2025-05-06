@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS | الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+
+
+<!-- start navbar -->
+
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900 drop-shadow-md fixed w-full z-40" >
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="dist/assets/images/logo.png" class="h-8 pl-1.5 rounded-[5px]" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">أفق أكاديمي</span>
+    </a>
+    <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+          <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900"><path fill="#b22234" d="M0 0h7410v3900H0z"/><path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/><path fill="#3c3b6e" d="M0 0h2964v2100H0z"/><g fill="#fff"><g id="d"><g id="c"><g id="e"><g id="b"><path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"/><use xlink:href="#a" y="420"/><use xlink:href="#a" y="840"/><use xlink:href="#a" y="1260"/></g><use xlink:href="#a" y="1680"/></g><use xlink:href="#b" x="247" y="210"/></g><use xlink:href="#c" x="494"/></g><use xlink:href="#d" x="988"/><use xlink:href="#c" x="1976"/><use xlink:href="#e" x="2470"/></g></svg>
+          English (US)
+        </button>
+        <!-- Dropdown -->
+        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700" id="language-dropdown-menu">
+          <ul class="py-2 font-medium" role="none">
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                  English (US)
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512"><path fill="#ffce00" d="M0 341.3h512V512H0z"/><path d="M0 0h512v170.7H0z"/><path fill="#d00" d="M0 170.7h512v170.6H0z"/></svg>
+                  Deutsch
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#fff" d="M0 0h512v512H0z"/><path fill="#009246" d="M0 0h170.7v512H0z"/><path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/></g></svg>              
+                  Italiano
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512"><defs><path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/></defs><path fill="#de2910" d="M0 0h512v512H0z"/><use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/><use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/><use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/></svg>
+                  中文 (繁體)
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+      <ul class="flex flex-col md:items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-[#3A5795] md:p-0 md:dark:text-[#ebe9e984]" aria-current="page">الرئيسية</a>
+        </li>
+        <li>
+          <a href="course-details.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#3A5795] dark:text-white md:dark:hover:text-[#ebe9e984] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">الكورسات</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:text-[#3A5795] dark:text-white md:dark:hover:text-[#ebe9e984] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">الخدمات</a>
+        </li>
+        <li>
+          <a href="single-post.html" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#3A5795] dark:text-white   md:dark:hover:text-[#ebe9e984] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">المدونة</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#3A5795] dark:text-white md:dark:hover:text-[#ebe9e984] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">اتصل بنا</a>
+        </li>
+        <li class="mr-2 ">
+          <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none  rounded-lg text-sm p-2.5">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        </button>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  
+<!-- end navbar -->
+
+
+<!-- start hero -->
+<section class="hero bg-[#ebe9e9] dark:bg-[#1c2a49] dark:text-white ">
+  <div class="max-w-screen-xl md:flex  mx-auto  flexx">
+    <div class="hero-info md:w-1/2 flex flex-col justify-center md:items-start items-center mb-2 md:p-[0] p-3">
+        <h1 class="text-[#3A5795] md:text-3xl text-xl font-bold dark:text-white md:mb-5  leading-10"> أفق أكاديمي – حيث تلتقي المعرفة بالتطور   
+    </h1>
+<h2 class="md:text-xl text-l mb-5 font-medium">  البرمجة وتطوير الويب - التسويق الرقمي - التصميم الجرافيكي - اللغات
+  
+</h2>
+<p  class="md:leading-7 leading-5 md:mb-10 mb-3 md:text-[15px] text-[12px]">
+  أفق أكاديمي هو منصة تعليمية حديثة تهدف إلى توسيع آفاق المعرفة وإثراء تجربة التعلم. توفر بيئة تعليمية متكاملة تدعم تطوير المهارات الأكاديمية والمهنية عبر دورات متميزة، أدوات تفاعلية، ومحتوى متجدد يلبي احتياجات المتعلمين.
+
+</p>
+<div class="flex gap-3">
+    <a href="" class="btn p-2 bg-[#3A5795] text-white dark:bg-[#ebe9e984]"> تواصل معنا</a>
+    <a href="" class="btn p-2 bg-[#3A5795] text-white dark:bg-[#ebe9e984]">إشترك الآن</a>
+</div>
+
+
+</div>
+    <div class="  md:w-1/2  flex md:justify-end justify-center mt-[100px] mb-[100px]">
+        <img class="md:w-[80%] w-[80%] hero-img" src="dist/assets/images/hero.jpg" alt="">
+    </div>
+  </div>
+
+</section>
+
+
+<!-- end hero -->
+
+
+
+
+<!-- start features section -->
+ <section class="py-7 features bg-[#ebe9e9a4] dark:bg-[#25375f] ">
+  <h2 class="text-center text-[#3A5795] md:text-2xl text-2xl font-bold dark:text-white mb-5 ">مزايا أفق أكاديمي  </h2>
+  <p class="text-center mx-auto md:text-[18px] text-l mb-5 font-medium dark:text-white">في أفق أكاديمي، نحن لا نقدم مجرد دورات تعليمية، بل نوفر تجربة تعلم متكاملة تجمع بين الابتكار والجودة.
+  </p>
+  <div class="ani max-w-screen-xl mx-auto boxes grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 px-5">
+<div class="box text-center border p-1 rounded-[5px] bg-[#bebebe69] dark:bg-[#1c2a49] dark:text-white hover:translate-1 transition-all transition-0.3s cursor-pointer" style="box-shadow: 1px 1px 1px #252525;">
+  <i class="fa-solid fa-book-open text-4xl "></i>
+<h3 class="text-l font-bold text-[#3A5795] dark:text-white
+ mb-1 ">محتوى تعليمي متجدد</h3>
+<p class="text-[15px] text-[#
+2a406e] ">نقدم مواد تعليمية حديثة و متطورة مع أحدث الاتجاهات في مختلف المجالات و مما يضمن لك التعلم وفقاً لأفضل الممارسات . </p>
+</div>
+<div class="box text-center border p-1 rounded-[5px] bg-[#bebebe69] dark:bg-[#1c2a49] dark:text-white hover:translate-1 transition-all transition-0.3s cursor-pointer" style="box-shadow: 1px 1px 1px #252525;">
+  <i class="fa-solid fa-laptop text-4xl "></i>
+
+<h3 class="text-l font-bold text-[#3A5795] dark:text-white
+  mb-1 ">  تقنيات حديثة</h3>
+<p class="text-[15px] text-[#
+2a406e] ">نستخدم أحدث التقنيات في بيئة التعلم الإلكتروني ,مما يوفر تجربة سلسلة وتفاعلية من خلال منصتنا الذكية</p>
+</div>
+<div class="box text-center border p-1 rounded-[5px] bg-[#bebebe69] dark:bg-[#1c2a49] dark:text-white hover:translate-1 transition-all transition-0.3s cursor-pointer" style="box-shadow: 1px 1px 1px #252525;">
+  <i class="fa-solid fa-user-tie text-4xl "></i>
+<h3 class="text-l font-bold text-[#3A5795] dark:text-white mb-1 ">مدربين خبراء  </h3>
+<p class="text-[15px] text-[#
+2a406e] ">نخبة من المدربين المحترفين , يمتلكون خبرة واسعة في مجالاتهم , ويحرصون على تفديم محتوى غني بالمعلومات والتطبيقات العملية .
+
+</p></div>
+<div class="box text-center border p-1 rounded-[5px] bg-[#bebebe69] dark:bg-[#1c2a49] dark:text-white hover:translate-1 transition-all transition-0.3s cursor-pointer" style="box-shadow: 1px 1px 1px #252525;">
+  <i class="fa-solid fa-clock text-4xl "></i>
+  <h3 class="text-l font-bold text-[#3A5795] dark:text-white
+  mb-1 ">  مرونة التعلم</h3>
+<p class="text-[15px] text-[#
+2a406e] ">
+تعلم وفقاً لوقتك وجدولك الخاص ! نقدم دورات ذاتية , وجلسات مباشرة وخيارات متعددة تناسب احتياجاتك
+</p>
+</div>
+
+
+  </div>
+
+ </section>
+<!-- end features section -->
+
+
+<!-- start categories -->
+ <section class="py-7 bg-[#ebe9e9] dark:bg-[#1c2a49] dark:text-white">
+  <h2 class="text-center text-[#3A5795] md:text-2xl text-2xl font-bold dark:text-white mb-5"> استكشف دوراتنا – تعلم، تطوّر، أبدع
+  </h2>
+  <p class="text-center mx-auto md:text-[18px] text-l md:w-[60%] mb-5 font-medium dark:text-white">نقدم مجموعة متنوعة من الدورات المصممة لتلبية احتياجات المتعلمين في مختلف المجالات. سواء كنت تبحث عن تطوير مهاراتك في البرمجة، التسويق الرقمي، التصميم الجرافيكي، أو الإدارة وريادة الأعمال، ستجد لدينا المحتوى الذي يساعدك على التقدم بثقة.</p>
+  <div class="max-w-screen-xl mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 mt-3 gap-5 px-2.5">
+<div class="ani categories-course flex justify-between items-center border-sky-100 p-4 rounded-[10px] bg-[#c6c6c6bc] gap-2 hover:translate-1 transition-all transition-0.3s cursor-pointer dark:bg-[#25375f]  " style="box-shadow: 2px 2px 1px #9197a3;"
+>
+  <h3 class="md:text-[18px] text-[13px] font-bold text-[#3A5795] dark:text-white
+ "> التكنولوجيا والبرمجة
+
+  </h3>
+  <img  src="dist/assets/images/image1.jpg" 
+class="rounded-full w-[100px] h-[100px] object-cover" alt="">
+</div>
+<div class="categories-course flex justify-between items-center border-sky-100 p-4 rounded-[10px] bg-[#c6c6c6bc] gap-2 hover:translate-1 transition-all transition-0.3s cursor-pointer dark:bg-[#25375f]" style="box-shadow: 2px 2px 1px #9197a3;"
+>
+  <h3 class="md:text-[18px] text-[13px] font-bold text-[#3A5795] dark:text-white
+ "> إدارة الأعمال والتسويق 
+
+  </h3>
+  <img   src="dist/assets/images/image2.jpg" class="rounded-full w-[100px] h-[100px] object-cover" alt="">
+</div>
+<div class="categories-course flex justify-between items-center border-sky-100 p-4 rounded-[10px] bg-[#c6c6c6bc] gap-2 hover:translate-1 transition-all transition-0.3s cursor-pointer dark:bg-[#25375f]" style="box-shadow: 2px 2px 1px #9197a3;"
+>
+  <h3 class="md:text-[18px] text-[13px] font-bold text-[#3A5795] dark:text-white
+ ">  التصميم والإبداع
+
+  </h3>
+  <img width="80" src="dist/assets/images/image3.jpg" 
+class="rounded-full w-[100px] h-[100px] object-cover" alt="">
+</div>
+<div class="categories-course flex justify-between items-center border-sky-100 p-4 rounded-[10px] bg-[#c6c6c6bc] gap-2 hover:translate-1 transition-all transition-0.3s cursor-pointer dark:bg-[#25375f] " style="box-shadow: 2px 2px 1px #9197a3;"
+>
+  <h3 class="md:text-[18px] text-[13px] font-bold text-[#3A5795] dark:text-white
+ ">إدارة المشاريع
+
+  </h3>
+  <img width="80" src="dist/assets/images/image4.webp" 
+class="rounded-full w-[100px] h-[100px] object-cover" alt="">
+</div>
+<div class="categories-course flex justify-between items-center border-sky-100 p-4 rounded-[10px] bg-[#c6c6c6bc] gap-2 hover:translate-1 transition-all transition-0.3s cursor-pointer dark:bg-[#25375f] " style="box-shadow: 2px 2px 1px #9197a3;"
+>
+  <h3 class="md:text-[18px] text-[13px] font-bold text-[#3A5795] dark:text-white
+ "> التطوير الشخصي والمهني 
+
+  </h3>
+  <img width="80" src="dist/assets/images/image5.png" 
+class="rounded-full w-[100px] h-[100px] object-cover" alt="">
+</div>
+<div class="categories-course flex justify-between items-center border-sky-100 p-4 rounded-[10px] bg-[#c6c6c6bc] gap-2 hover:translate-1 transition-all transition-0.3s cursor-pointer dark:bg-[#25375f] " style="box-shadow: 2px 2px 1px #9197a3;"
+>
+  <h3 class="md:text-[18px] text-[13px] font-bold text-[#3A5795] dark:text-white
+ ">  تعلم اللغات
+
+  </h3>
+  <img width="80" src="dist/assets/images/image8.jpg" 
+class="rounded-full w-[100px] h-[100px] object-cover" alt="">
+</div>
+<div class="categories-course flex justify-between items-center border-sky-100 p-4 rounded-[10px] bg-[#c6c6c6bc] gap-2 hover:translate-1 transition-all transition-0.3s cursor-pointer dark:bg-[#25375f] " style="box-shadow: 2px 2px 1px #9197a3;"
+>
+  <h3 class="md:text-[18px] text-[13px] font-bold text-[#3A5795] dark:text-white
+ ">  تحليل البيانات
+
+  </h3>
+  <img width="80" src="dist/assets/images/image6.jpg" 
+class="rounded-full w-[100px] h-[100px] object-cover" alt="">
+</div>
+<div class="categories-course flex justify-between items-center border-sky-100 p-4 rounded-[10px] bg-[#c6c6c6bc] gap-2 hover:translate-1 transition-all transition-0.3s cursor-pointer dark:bg-[#25375f] " style="box-shadow: 2px 2px 1px #9197a3;"
+>
+  <h3 class="md:text-[18px] text-[13px] font-bold text-[#3A5795] dark:text-white "> التعليم والتدريب 
+
+  </h3>
+  <img width="80" src="dist/assets/images/image7.webp" class="rounded-full w-[100px] h-[100px] object-cover" alt="">
+</div>
+  </div>
+ </section>
+<!-- end categories -->
+
+
+
+<!-- start about -->
+ <section class="py-7  bg-[#ebe9e9a4] dark:bg-[#25375f] dark:text-white">
+  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2">
+    <div class="about-right p-1 hero-info">
+<h2 class="md:text-right text-center text-[#3A5795] md:text-2xl text-2xl font-bold dark:text-white mb-5"> من نحن – رؤيتنا ورسالتنا
+</h2>
+<p class="md:text-right text-center md:w-[80%]    md:text-[17px] text-l font-medium dark:text-white mb-2.5">في أفق أكاديمي، نحن أكثر من مجرد منصة تعليمية؛ نحن مجتمع يهدف إلى تمكين الأفراد من اكتساب المعرفة وتنمية مهاراتهم لمواكبة التطورات المستمرة.
+</p>
+<ul class="" >
+  <li class="mb-3  border-sky-100 p-4 rounded-[10px] bg-[#c6c6c63f] dark:bg-[#f3f3f3] dark:text-black flex items-center gap-1 justify-center">
+    <i class="fa-solid fa-circle-check text-xl text-emerald-600 "></i>
+    <span class="text-[13px]">
+      رسالتنا: توفير تجربة تعليمية حديثة، تفاعلية، وشاملة تلبي احتياجات المتعلمين في مختلف المجالات.
+
+
+    </span>
+  </li>
+  <li class="mb-3  border-sky-100 dark:bg-[#f3f3f3] dark:text-black p-4 rounded-[10px] bg-[#c6c6c63f] flex items-center gap-1 justify-center">
+    <i class="fa-solid fa-circle-check text-xl text-emerald-600 "></i>
+    <span class="text-[13px]">
+      رؤيتنا: أن نكون الوجهة الأولى للراغبين في التعلم وتطوير قدراتهم من خلال محتوى متميز .
+
+
+
+
+    </span>
+  </li>
+  <li class="mb-3  border-sky-100 p-4 rounded-[10px] bg-[#c6c6c63f] dark:bg-[#f3f3f3] dark:text-black flex items-center gap-1 justify-center">
+    <i class="fa-solid fa-circle-check text-xl text-emerald-600 "></i>
+    <span class="text-[13px]">
+      قيمنا: الابتكار، الجودة، الشفافية، والتفاعل المستمر مع المجتمع التعليمي.
+
+
+
+    </span>
+  </li>
+
+   
+</ul>
+    </div>
+    <div class="hidden about-left md:grid grid-cols-2 gap-1">
+<img src="dist/assets/images/image9.jpg" class="w-[100%] hero-img mr-3" alt="">
+<img src="dist/assets/images/image10.png" class="mt-[150px] w-[100%] h-[50%] mr-3 hero-img" alt="">
+    </div>
+  </div>
+ </section>
+<!-- end about -->
+
+<!-- start courses -->
+ <section class="all-courses g py-7 bg-[#ebe9e9] dark:bg-[#1c2a49] dark:text-white">
+  <h2 class=" text-center text-[#3A5795] md:text-2xl text-2xl font-bold dark:text-white mb-5">
+    اكتشف وتعلم: دورات لتنمية مهاراتك
+
+  </h2>
+  <p class=" text-center w-[80%]  mx-auto md:w-full  md:text-[17px] text-l font-medium dark:text-white mb-2.5">
+    "بوابتك إلى المعرفة والتطوير الشخصي، اختر الدورة المناسبة لك وابدأ رحلة التعلم!
+  </p>
+  <div class="swiper max-w-screen-xl mx-auto rounded-[10px]">
+  <div class=" swiper-wrapper ani  p-4 courses rounded-[10px]">
+<div class="swiper-slide course relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer" style="box-shadow: 2px 2px 1px #9197a3;">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+    البرمجة والتقنيات الحديثة
+  </div>
+  <div class="course-img w-full h-[200px] ">
+    <img src="dist/assets/images/image11.png" alt="" class="w-full h-full object-cover ">
+  </div>
+  <div class="course-info p-3">
+    <h3 class="font-extrabold mb-2">
+      تصميم مواقع الويب
+    </h3>
+    <p class="text-[15px]">"أطلق إبداعك في العالم الرقمي، وصمم مواقع ويب احترافية!"
+
+    </p>
+    <div class="price">
+      <div class="flex justify-between ">
+        <div>
+          <span>السعر:</span>
+        <span class="line-through font-bold">250$</span>
+        </div>
+        <span class="font-bold">150$</span>
+      </div>
+      <a href="course-details.html" class="block text-center btn p-2 bg-[#3A5795] text-white   w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide course relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white  my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer "style="box-shadow: 2px 2px 1px #9197a3;">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+  التسويق وإدارة الأعمال
+  </div>
+  <div class="course-img w-full h-[200px] ">
+    <img src="dist/assets/images/image12.webp" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="course-info p-3">
+    <h3 class="font-extrabold mb-2">
+      إدارة المشاريع باحترافية
+    </h3>
+    <p class="text-[15px]">"نجاح المشاريع يبدأ بالتخطيط الذكي والتنفيذ الفعّال!"
+
+
+
+    </p>
+    <div class="price">
+      <div class="flex justify-between ">
+        <div>
+          <span>السعر:</span>
+        <span class="line-through font-bold">250$</span>
+        </div>
+        <span class="font-bold">150$</span>
+      </div>
+      <a href="course-details.html" class="block text-center btn p-2 bg-[#3A5795] text-white  w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide course relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white  my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer"style="box-shadow: 2px 2px 1px #9197a3;">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+  التنمية الذاتية
+  </div>
+  <div class="course-img w-full h-[200px] ">
+    <img src="dist/assets/images/image13.jpg" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="course-info p-3">
+    <h3 class="font-extrabold mb-2">
+      إدارة الوقت بفعالية
+    </h3>
+    <p class="text-[15px] ">"حقق أقصى استفادة من يومك، وتعلم فن تنظيم الوقت!"
+
+
+    </p>
+    <div class="price">
+      <div class="flex justify-between ">
+        <div>
+          <span>السعر:</span>
+        <span class="line-through font-bold">250$</span>
+        </div>
+        <span class="font-bold">150$</span>
+      </div>
+      <a href="course-details.html" class="block text-center btn p-2 bg-[#3A5795] text-white  w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide course relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white  my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer"style="box-shadow: 2px 2px 1px #9197a3;">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+    البرمجة والتقنيات الحديثة
+  </div>
+  <div class="course-img w-full h-[200px] ">
+    <img src="dist/assets/images/image14.webp" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="course-info p-3">
+    <h3 class="font-extrabold mb-2">
+      مقدمة في الذكاء الاصطناعي
+    </h3>
+    <p class="text-[15px]">"تعرف على التكنولوجيا التي تُغيّر المستقبل! استكشف عالم الذكاء الاصطناعي"
+
+      
+
+    </p>
+    <div class="price">
+      <div class="flex justify-between ">
+        <div>
+          <span>السعر:</span>
+        <span class="line-through font-bold">250$</span>
+        </div>
+        <span class="font-bold">150$</span>
+      </div>
+      <a href="course-details.html" class="block text-center btn p-2 bg-[#3A5795] text-white  w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide course relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white  my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer"style="box-shadow: 2px 2px 1px #9197a3;">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+    البرمجة والتقنيات الحديثة
+  </div>
+  <div class="course-img w-full h-[200px] ">
+    <img src="dist/assets/images/Python-2.webp" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="course-info p-3">
+    <h3 class="font-extrabold mb-2">
+      تحليل البيانات باستخدام Python
+    </h3>
+    <p class="text-[15px]">" عملية استخراج الرؤى القيمة من البيانات عبر مكتبات مثل Pandas وNumPy،"
+
+      
+
+    </p>
+    <div class="price">
+      <div class="flex justify-between ">
+        <div>
+          <span>السعر:</span>
+        <span class="line-through font-bold">250$</span>
+        </div>
+        <span class="font-bold">150$</span>
+      </div>
+      <a href="course-details.html" class="block text-center btn p-2 bg-[#3A5795] text-white  w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+ <div class="btn-controls flex justify-center gap-2">
+  <div class="btn-next w-[40px] h-[40px] rounded-full bg-[#3A5795] flex items-center justify-center cursor-pointer">
+    <i class="fa-regular fa-circle-right text-gray-100"></i>
+
+  </div>
+  <div class="btn-pre w-[40px] h-[40px] rounded-full bg-[#3A5795] flex items-center justify-center cursor-pointer">
+    <i class="fa-regular fa-circle-left text-gray-100"></i>
+
+  </div>
+ </div>
+  </div>
+ </section>
+<!-- end courses -->
+
+<!-- start faq section -->
+ <section class="py-7 bg-[#ebe9e9a4] dark:bg-[#25375f] dark:text-white " >
+  <h2 class=" text-center text-[#3A5795] md:text-2xl text-2xl font-bold dark:text-white mb-5">    لديك سؤال؟ إليك الإجابة!
+
+  </h2>
+  <p class=" text-center    md:text-[17px] text-l font-medium dark:text-white mb-4">"اطّلع على الإجابات لأكثر الأسئلة شيوعًا، واستكشف الحلول لكل ما تبحث عنه!</p>
+  <div class="main-faq max-w-screen-xl mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-5">
+    <div class="faq-info hero-info">
+
+      <div id="accordion-color" data-accordion="collapse" data-active-classes="bg- dark:bg- text-black dark:text-" >
+        <h2 id="accordion-color-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-b-1 rounded-t-xl   bg-[#3A5795]  gap-3 dark:bg-[#1c2a49] dark:text-white" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
+            <span>ما هي شروط التسجيل في الدورات؟
+
+            </span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+          <div class="p-5 border border-b-2 rounded-t-xl overflow-hidden dark:bg-slate-900 ">
+            <p class="mb-2 text-black dark:text-white">تختلف شروط التسجيل حسب نوع الدورة، لكن غالبًا لا توجد متطلبات مسبقة للدورات المبتدئة. أما الدورات المتقدمة فقد تتطلب معرفة مسبقة أو خبرة معينة في المجال. يمكنك الاطلاع على تفاصيل كل دورة لمعرفة شروط التسجيل الخاصة بها.</p>
+
+          </div>
+        </div>
+       
+      </div>
+      <div id="accordion-color-1" data-accordion="collapse" data-active-classes="bg- dark:bg- text-black dark:text-" >
+        <h2 id="accordion-color-heading-2">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-b-1 rounded-t-xl   bg-[#3A5795]  gap-3 dark:bg-[#1c2a49] dark:text-white" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+            <span>هل يمكنني الحصول على شهادة بعد إتمام الدورة؟
+
+
+
+            </span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+          <div class="p-5 border border-b-2 rounded-t-xl overflow-hidden dark:bg-slate-900 ">
+            <p class="mb-2 text-black dark:text-white"> نعم! معظم الدورات تُقدم شهادة إتمام عند الانتهاء بنجاح. يمكنك استخدامها لإثراء سيرتك الذاتية أو مشاركتها على منصات التواصل المهني مثل LinkedIn.
+          </div>
+        </div>
+       
+      </div>
+      <div id="accordion-color-2" data-accordion="collapse" data-active-classes="bg- dark:bg- text-black dark:text-" >
+        <h2 id="accordion-color-heading-3">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-b-1 rounded-t-xl   bg-[#3A5795]  gap-3 dark:bg-[#1c2a49] dark:text-white" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+            <span> هل الدورات متاحة على الإنترنت أم يجب حضورها بشكل شخصي؟
+
+ 
+
+
+
+            </span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+          <div class="p-5 border border-b-2 rounded-t-xl overflow-hidden dark:bg-slate-900 ">
+            <p class="mb-2 text-black dark:text-white">   لدينا دورات إلكترونية يمكنك حضورها من أي مكان، بالإضافة إلى بعض الدورات التي تتطلب حضورًا فعليًا. تأكد من قراءة تفاصيل الدورة لمعرفة طريقة تقديمها
+          </div>
+        </div>
+       
+      </div>
+      <div id="accordion-color-3" data-accordion="collapse" data-active-classes="bg- dark:bg- text-black dark:text-" >
+        <h2 id="accordion-color-heading-4">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-white border border-b-1 rounded-t-xl   bg-[#3A5795]  gap-3 dark:bg-[#1c2a49] dark:text-white" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
+            <span> هل يمكنني استرداد المبلغ في حال لم أتمكن من إكمال الدورة؟
+
+
+
+ 
+
+
+
+            </span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+          <div class="p-5 border border-b-2 rounded-t-xl overflow-hidden dark:bg-slate-900 ">
+            <p class="mb-2 text-black dark:text-white">   تعتمد سياسة الاسترداد على شروط التسجيل، لكن غالبًا ما يكون هناك فترة سماح يمكن خلالها طلب استرداد جزئي أو كامل للمبلغ وفقًا للأنظمة المتبعة. يُفضل الاطلاع على سياسة الاسترداد الخاصة بالدورات قبل التسجيل.
+          </div>
+        </div>
+       
+      </div>
+      
+    </div>
+    <div class="faq-img  hidden md:flex md:justify-end ">
+      <img src="dist/assets/images/image15.jpg" class="rounded-2xl object-cover hero-img" style=" box-shadow:4px 4px 1px #3A5795 ;" alt="" width="80%">
+    </div>
+
+  </div>
+ </section>
+<!-- end faq section -->
+
+
+<!-- start blog -->
+<section class="all-blog g py-7 bg-[#ebe9e9] dark:bg-[#1c2a49] dark:text-white">
+  <h2 class=" text-center text-[#3A5795] md:text-2xl text-2xl font-bold dark:text-white mb-5">
+   مقالات و أفكار ملهمة
+
+  </h2>
+  <p class=" text-center w-[80%]  mx-auto md:w-full  md:text-[17px] text-l font-medium dark:text-white mb-2.5">
+    اكتشف محتوى غني بالمعلومات والأفكار الجديدة—مقالات، نصائح، وتحليلات تساعدك على التقدم والتطور في مجالك. تابع أحدث المواضيع واستمتع بقراءة ممتعة ومفيدة!
+  </p>
+  <div class="ani max-w-screen-xl mx-auto p-4 courses grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2.5">
+<div class="blog relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white  my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+   الذكاء الصنعي
+  </div>
+  <div class="blog-img w-full h-[200px] ">
+    <img src="dist/assets/images/image16.jpeg" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="blog-info p-3">
+    <h3 class="font-extrabold mb-2 text-center">
+      "الذكاء الصناعي وتعلم الآلة"
+    </h3>
+    <p class="text-[15px] text-center">الذكاء الاصطناعي وتعلم الآلة يغيران مستقبل التكنولوجيا من خلال تحسين تحليل البيانات واتخاذ القرارات الذكية
+
+    </p>
+    <div class="price">
+      <div class="auth flex justify-start gap-3 ">
+      
+         
+        <span class="line-through font-bold"><img src="dist/assets/images/avatar4.svg" alt="" style="height: 50px; width: 50px;" class="object-cover rounded-full"></span>
+        <div>
+          <h3 class="text-[#3A5795] font-bold dark:text-white">ياسمين جمال
+
+          </h3>
+          <span> 9 مارس 2025
+           
+            </span>
+        </div>
+        
+      </div>
+      <a href="single-post.html" class="btn p-2 bg-[#3A5795] text-white flex  justify-center  w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+<div class="blog relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white  my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+   التصميم الإبداعي
+  </div>
+  <div class="blog-img w-full h-[200px] ">
+    <img src="dist/assets/images/image17.webp" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="blog-info p-3">
+    <h3 class="font-extrabold mb-2 text-center">
+      "أحدث اتجاهات تصميم الويب 2025"
+    </h3>
+    <p class="text-[15px] text-center">التصميم البسيط والتفاعلات الدقيقة والذكاء الاصطناعي يشكلون مستقبل مواقع الويب الحديثة.
+
+
+
+    </p>
+    <div class="price">
+      <div class="auth flex justify-start gap-3 ">
+      
+         
+        <span class="line-through font-bold"><img src="dist/assets/images/avatar2.png" alt="" style="height: 50px; width: 50px;" class="object-cover rounded-full"></span>
+        <div>
+          <h3 class="text-[#3A5795] font-bold dark:text-white ">أحمد القاضي</h3>
+          <span>24 يناير 2025
+          </span>
+        </div>
+        
+      </div>
+      <a href="single-post.html" class="btn p-2 bg-[#3A5795] text-white flex  justify-center  w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+<div class="blog relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white   my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+  تطوير الويب
+  </div>
+  <div class="blog-img w-full h-[200px] ">
+    <img src="dist/assets/images/image18.png" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="blog-info p-3">
+    <h3 class="font-extrabold mb-2 text-center ">
+      "مخططات UX/UI لتجربة  مثالية"
+    </h3>
+    <p class="text-[15px] text-center">هي أدوات بصرية تساعد في تحسين تجربة المستخدم من خلال تصميم واجهات سهلة الاستخدام ومتناسقة
+
+    </p>
+    <div class="price">
+      <div class="auth flex justify-start gap-3 ">
+      
+         
+        <span class="line-through font-bold"><img src="dist/assets/images/avatar3.webp" alt="" style="height: 50px; width: 50px;" class="object-cover rounded-full"></span>
+        <div>
+          <h3 class="text-[#3A5795] font-bold dark:text-white">نور الهدى</h3>
+          <span>4 يناير 2025</span>
+        </div>
+        
+      </div>
+      <a href="single-post.html" class="btn p-2 bg-[#3A5795] text-white flex  justify-center  w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+<div class="blog relative  border-sky-100 overflow-hidden rounded-[10px] bg-[#c6c6c663] dark:bg-[#25375f] dark:text-white   my-[18px] hover:translate-1 transition-all transition-0.3s cursor-pointer">
+  <div class="absolute top-1 right-1 rounded-[2px] p-1 text-[10px] text-white bg-[#c6c6c6be]">
+   التصميم الإبداعي
+  </div>
+  <div class="blog-img w-full h-[200px] ">
+    <img src="dist/assets/images/image19.jpg" alt="" class="w-full h-full object-cover">
+  </div>
+  <div class="blog-info p-3">
+    <h3 class="font-extrabold mb-2 text-center">
+      "إلهام في تصميم المواقع الحديثة"
+    </h3>
+    <p class="text-[15px] text-center">استكشاف لأحدث الاتجاهات والأساليب الإبداعية في تطوير مواقع ويب جذابة تجمع بين الابتكار والجمال
+
+    </p>
+    <div class="price">
+      <div class="auth flex justify-start gap-3 ">
+      
+         
+        <span class="line-through font-bold"><img src="dist/assets/images/avatar1.png" alt="" style="height: 50px; width: 50px;" class="object-cover rounded-full"></span>
+        <div>
+          <h3 class="text-[#3A5795] font-bold  dark:text-white">محمد جمال</h3>
+          <span>19 يونيو 2024</span>
+        </div>
+        
+      </div>
+      <a href="single-post.html" class="btn p-2 bg-[#3A5795] text-white flex  justify-center  w-full mt-1">المزيد من التفاصيل</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+  </div>
+ </section>
+<!-- end blog -->
+
+
+<section class="news-latter  py-7 bg-[#ebe9e9a4] dark:bg-[#25375f] dark:text-white">
+<div class="grid grid-cols-1 md:grid-cols-2 p-3 md:p-0 max-w-screen-xl mx-auto ">
+  <div class="news-info">
+    <h2 class="text-center md:text-start text-[#3A5795] md:text-2xl text-2xl font-bold dark:text-white mb-2">النشرة البريدية</h2>
+    <p class=" w-[80%]  mx-auto md:w-full  md:text-[17px] text-l font-medium dark:text-white mb-2.5">  ابقَ في الصدارة! انضم إلى نشرتنا البريدية واحصل على آخر التحديثات، الدورات الجديدة، والمحتوى الحصري الذي سيأخذ تعلمك إلى المستوى التالي! 🚀
+      📩 اشترك الآن واستثمر في تطوير مهاراتك
+      </p>
+  </div>
+  <div class="new-form flex items-center">
+    <form action="" class="flex w-full ">
+      <input class="w-full border-2 border-[#3A5795] p-1 rounded-[10px] ml-2 dark:placeholder:text-white placeholder:text-[#383838]" type="text" name="" id="" placeholder="ادخال البريد الالكتروني للاشتراك ">
+      <button class="btn bg-[#3A5795] text-white p-2 w-20">اشترك </button>
+    </form>
+  </div>
+</div>
+</section>
+
+<!-- start footer -->
+ <footer class="  py-7  bg-[#1c2a49] text-white dark:border-t-[5px] dark:border-white border-t-[5px] border-[#60636a]">
+    <div class="max-w-screen-xl mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="f1-section">
+        <h3 class="text-center md:text-start  md:text-2xl text-2xl font-bold dark:text-white mb-2">أفق أكاديمي</h3>
+        <p class="     md:text-[17px] text-l font-medium dark:text-white  mr-2 md:text-start text-center leading-7">  منصة تعليمية حديثة مصممة لتوفير تجربة تعلم متكاملة وتفاعلية. نقدم دورات متنوعة بمحتوى عالي الجودة، مصمم خصيصًا لتمكين المتعلمين من تطوير مهاراتهم بكفاءة. انضم إلينا واكتشف أفقًا جديدًا من المعرفة والتطور! 🚀
+         
+          </p>
+
+      </div>
+        <div class="f2-section">
+        <h3 class="md:text-start text-center md:text-2xl text-2xl font-bold dark:text-white mb-3">أهم الروابط </h3>
+       <ul class="flex flex-col mr-3 text-[15px] leading-7 items-center md:items-start">
+         <li class="flex gap-3 "><a class="text-white" href=""><i class="fas fa-info-circle"></i>  </a>حولنا</li>
+         <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-shield"></i> </i></a>ساسية الخصوصية</li>
+         <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-life-ring"></i></a>المساعدة والدعم</li>
+         <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-phone-flip"></i></a>اتصل بنا</li>
+        <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-circle-question"></i></a>الأسئلة الشائعة</li>
+       </ul>
+        </div>
+        <div class="border border-b-2 w-[50%] mx-auto md:hidden"></div>
+        <div class="f3-section">
+        <h3 class="md:text-start text-center md:text-2xl text-2xl font-bold dark:text-white mb-3">أهم الكورسات </h3>
+       <ul class="flex flex-col mr-3 text-[15px] leading-7 items-center md:items-start">
+         <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-laptop-code"></i></a>البرمجة وتطوير الويب</li>
+         <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-briefcase"></i></a>إدارة المشاريع</li>
+         <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-paintbrush"></i></a>التصميم والجرافيك</li>
+         <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-bullhorn"></i></a>التسويق الالكتروني</li>
+        <li class="flex gap-3"><a class="text-white" href=""><i class="fa-solid fa-user-graduate"></i></a>المهارات الشخصية</li>
+       </ul>
+        </div>
+
+<div class="f4-section">
+  <h3 class="text-start  md:text-2xl text-2xl font-bold dark:text-white mb-4">النشرة البريدية  </h3>
+<form action="" class="flex gap-1.5 flex-col ">
+  <input type="text" class="border-2 border-white px-[8px] py-[4px] rounded-[5px] placeholder:text-white" placeholder="البريد الالكتروني">
+  <button class="btn px-[8px] py-[4px] rounded-[5px] bg-gray-400">الاشتراك</button>
+</form>
+</div>
+
+</div>
+<div class="max-w-screen-xl mx-auto md:flex justify-between text-white border-t-[1px] border-gray-500 py-[5px] text-center mt-3" >
+  <p>كافة الحقوق محفوظة لمدرسة </p>
+  <p>برمجة  
+    شركة أفق
+  </p>
+</div>
+
+
+ </footer>
+<!-- end footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script src="dist/assets/js/script.js"></script>
+
+</body>
+</html>
